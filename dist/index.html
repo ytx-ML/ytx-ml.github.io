@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic homepage of Yutong Xie, Southeast University.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Yutong Xie | Academic Homepage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-identity">
+      <a class="brand" href="#profile">Yutong Xie</a>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.7 13a9 9 0 0 1-9.7-9.7A9 9 0 1 0 20.7 13Z"/></svg>
+      </button>
+    </div>
+    <nav aria-label="Primary navigation">
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="profile" id="profile" aria-label="Personal profile">
+      <div class="portrait" id="profile-portrait"></div>
+      <div class="profile-content">
+        <div class="profile-details">
+          <h1><span id="profile-name">Yutong Xie</span> <span class="chinese-name" id="profile-cn-name" lang="zh-CN">(谢宇通)</span></h1>
+          <p class="profile-role" id="profile-role"></p>
+          <div class="profile-meta">
+            <p class="profile-meta-row" id="profile-location"></p>
+            <p class="profile-meta-row" id="profile-affiliation"></p>
+            <a class="profile-meta-row profile-email" id="profile-email"></a>
+            <div class="profile-links" id="profile-links"></div>
+          </div>
+        </div>
+        <div class="profile-bio" id="profile-bio-container">
+          <p id="profile-bio"></p>
+          <p class="profile-advisor" id="profile-advisor" hidden></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section news-section" id="news" aria-labelledby="news-title">
+      <div class="section-heading"><h2 id="news-title"><span class="section-icon" aria-hidden="true">🔥</span>News</h2></div>
+      <div class="news-list" id="news-list"></div>
+    </section>
+
+    <section class="section" id="publications" aria-labelledby="publications-title">
+      <div class="section-heading">
+        <div class="publication-heading-title">
+          <h2 id="publications-title"><span class="section-icon" aria-hidden="true">📝</span>Publications</h2>
+          <span id="publications-scholar"></span>
+        </div>
+        <div class="publication-filters" role="group" aria-label="Filter publications">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-button" type="button" data-filter="accepted" aria-pressed="false">Accepted</button>
+          <button class="filter-button" type="button" data-filter="preprint" aria-pressed="false">Preprints</button>
+        </div>
+      </div>
+      <div class="publication-list" id="publication-list" aria-live="polite"></div>
+    </section>
+
+    <section class="section awards-section" id="awards" aria-labelledby="awards-title">
+      <div class="section-heading">
+        <h2 id="awards-title"><span class="section-icon" aria-hidden="true">🏆</span>Honors &amp; Awards</h2>
+      </div>
+      <div class="award-list" id="award-list"></div>
+    </section>
+
+    <noscript><p>Please enable JavaScript to display the profile, publications, news, and awards.</p></noscript>
+  </main>
+
+  <footer class="site-footer">
+    <a href="#profile">Back to top ↑</a>
+  </footer>
+  <script src="site-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
